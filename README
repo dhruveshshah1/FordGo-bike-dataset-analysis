@@ -1,0 +1,28 @@
+Communicate-Data-Findings
+Data Visualisation - Ford Gobike Dataset
+
+Exploratory data visualization generally occurs during and after the data wrangling process, and is the main method that you will use to understand the patterns and relationships present in your data. This understanding will help you approach any statistical analyses and will help you build conclusions and findings. This process might also illuminate additional data cleaning tasks to be performed.
+
+Explanatory data visualization techniques are used after generating your findings, and are used to help communicate your results to others. Understanding design considerations will make sure that your message is clear and effective. In addition to being a good producer of visualizations, going through this project will also help you be a good consumer of visualizations that are presented to you by others.
+
+Summary of findings :
+
+1.Bike Ride Duration Time: The origianl duration data has right skew issue - bike durations range from less than 1 minute to more than 1400 minutes with median at around 9 min and mean at around 13 mins. We have to do some data transformation (I used log transformation) to make data visualization and data interpretation easiler.
+
+2.Bike Ride trends and Biker types:
+1)We find that Tuesday at 5:00 PM has the highest biker counts across 7 days, 24 hours.  
+2) 5:00 PM has the most 'Subscriber' bikers compared to other hours. It also has the most 'Customer' bikers compared to other hours.
+3) Tuesday has the most 'Subscriber' bikers compared to other days. Saturday has the most 'Customer' bikers compared to other days.
+4)Trip duration are longer for customers than subscribers.
+5)We can see that in general subsribers are more than customers on every day of the week. We can also see that the morning and evening times see the highest count of bikers, with maximum number of bike rides on the weekends.
+6)'Customer' bikers bike longer on average compared to 'Subscriber' bikers.
+7)There are more bikers on Saturday and on Sundays on average.
+
+Files
+readme.md 
+
+exploration.ipynb
+
+slide_deck.ipynb 
+
+To view the slide deck, you will need to use the expression (all one line): jupyter nbconvert slide_deck.ipynb --to slides --post serve --template output_toggle
